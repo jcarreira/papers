@@ -1,0 +1,5 @@
+Deconstructing Process Isolation 
+
+Problem: Hardware supported isolation is expensive (not negligible overhead)
+
+Solution: New OS (Singularity) that uses verification techniques to selectively choose which processes require software isolation avoiding some of the unnecessary overhead

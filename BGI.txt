@@ -1,0 +1,12 @@
+Fast Byte-Granularity Software Fault Isolation
+
+Problem: Poor reliability of OS extensions lead to poor overall reliability of systems. Previously proposed fault isolation mechanisms impose significant runtime overheads and have poor granularity. OS Extensions are particularly critical because they are developed with unsafe languages and they share the kernel's address space.
+
+Solution: A new system called BGI with byte granularity and type checking of kernel objects. BGI's purpose is to contain driver's faults and exploits that can derive from these faults. BGI does not isolate malicious code.
+
+
+Problematic situations: 
+Reads/writes in addresses without permission
+Read/writes in deallocated buffers
+Out of bound reads/writes
+
